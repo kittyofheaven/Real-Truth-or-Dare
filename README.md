@@ -24,6 +24,18 @@ replicating polygraph process, the inspector should ask the subject simple quest
 goodnews is, this app can be intregated with zoom, with little help from obs, but in the future we will add integrating to all video calls platform.
 
 ## How to play TOD using this app?
+- The default playmode is for 2 people, can be 1 introgator and 1 subject, or 2 ppl being an inspector and a subject then sw role after 1 question aswered.
+- Please use a proper lighting, camera / webcam, and mic for better anomaly accuracy
+- If u can set ur cam / webcam iso, set it into high iso until u can see some noise in the camera, but dont do it to much, bcs we want the app still can see ur face. (if in doubt just leave it regular, but with proper lighting).
+- Now wait until the black box on your forehead change to green one
+- if u seeing user connected and green box in your face, youre ready to go!
+- Now see the red text in left side bar, read it!.
+- read "The quick fox jumps over the lazy dog" until u see your speech get recorded
+- Now swap into player two 
+- read "The quick fox jumps over the lazy dog" until u see your speech get recorded, again
+- okay now you're ready to ask your friend the real question
+- HAVE FUNNN TY TY!
+- _ps : you can integrate this app to zoom using obs virtual cam & obs audio_
 
 ## End sentences
 now, while playing Truth or Dare, your friend can't lie anymore, _Big thankyou for synthacks to host this hackathon, and btw this project is for synthacks II and the theme is ENTERTAIMENT_, regards [kittyofheaven aka kuroneko](https://github.com/kittyofheaven)
