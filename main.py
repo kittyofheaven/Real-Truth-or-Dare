@@ -9,20 +9,26 @@ from voice_recog import get_audio, audio_callback
 
 """ TO-DO
 [x] config voice
-[ ] send it to frontend # socket io (?)
-[ ] get the wpm
-[ ] config video process
-[ ] extract pulse & measure
-[ ] get bpm
-[ ] replicate polygraph
+[x] send it to frontend # socket io (?)
+[x] get the wpm
+[x] config video process
+[x] extract pulse & measure
+[x] get bpm
+[x] replicate polygraph
 [ ] style front-end
-[ ] add participant parameter
+[x] add participant parameter
 """
 
 
 #PARAMETERS#
-selected_cam = 1
+selected_cam = 0
+num_of_player = 2
 ############
+
+if num_of_player == 1 :
+    num_of_question = 2
+else :
+    num_of_question = num_of_player
 
 app = Flask(__name__)
 socketio = SocketIO(app)
@@ -239,11 +245,11 @@ def main_handle_voice(msg) :
                 else :
                     sentiment = "neutral"
                 
-                if len(average_bpm_list) < 3 :
+                if len(average_bpm_list) < num_of_question :
                     bpm = get_bpm()
                     average_bpm_list.append(bpm)
                     average_wpm_list.append(audio_callback.response['wpm'])
-                    send_response = "'"+audio_callback.response['text'] + ",' \nWPM : " + str(audio_callback.response['wpm']) + ", \nBPM :" + str(bpm) + ", \nSentiment : " + sentiment + ", \nAnomaly : " + "still calculating"
+                    send_response = "'"+audio_callback.response['text'] + ",' \nWPM : " + str(audio_callback.response['wpm']) + ", \nBPM :" + str(bpm) + ", \nSentiment : " + sentiment + ", \nAnomaly : " + "calculating player " +str(len(average_bpm_list))
 
                 else : 
                     average_bpm = average_list(average_bpm_list)

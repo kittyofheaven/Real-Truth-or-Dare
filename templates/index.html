@@ -16,6 +16,19 @@
         html{
             background-color: black;
         }
+        #video_feed {
+        width: 61%
+        }
+        #plot_feed {
+        display: block;
+        width: 61%
+        }
+        #messages {
+            color: white;
+        }
+        #titlee{
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +51,13 @@
     <div class="w3-sidebar w3-black w3-bar-block" style="width:40%">
         <ul id="messages">
         </ul>
+        <button id="clear">clear</button>
+    </div>
+
+    <div id="feed" style="margin-left:40%">
+        <h2 align="center" id="titlee">Real Truth or Dare</h2>
+        <img align="center" id="video_feed" src="{{ url_for('video_feed') }}">
+        <img align="center" id="plot_feed"  src="{{ url_for('plot_feed') }}">
     </div>
 </body>
 </html>
