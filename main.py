@@ -9,6 +9,7 @@ from voice_recog import get_audio, audio_callback
 
 """ TO-DO
 [x] config voice
+[ ] send it to frontend # socket io (?)
 [ ] get the wpm
 [ ] config video process
 [ ] extract pulse & measure
@@ -26,6 +27,13 @@ app = Flask(__name__)
 socketio = SocketIO(app)
 socketio.init_app(app, cors_allowed_origins="*")
 
+###ROUTE START###
+@socketio.on('message')
+def main_handle_voice(msg) :
+    send(msg, broadcast=True)
+    print(msg)
+
 @app.route('/')
 def index():
     return render_template('index.html')
+###ROUTE END###

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- TO-DO
+    [ ] add question suggestion for right sidebar -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +19,22 @@
     </style>
 </head>
 <body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var socket = io.connect('http://127.0.0.1:5000');
+
+            socket.on('connect', function() {
+                socket.send("User connect success");
+            });
+
+            socket.on('message', function(msg) {
+                $("#messages").append('<li>' + msg + '</li>');
+            });
+
+        });
+    </script>
+
     <div class="w3-sidebar w3-black w3-bar-block" style="width:40%">
         <ul id="messages">
         </ul>
