@@ -37,6 +37,25 @@ goodnews is, this app can be intregated with zoom, with little help from obs, bu
 - HAVE FUNNN TY TY!
 - _ps : you can integrate this app to zoom using obs virtual cam & obs audio_
 
+## How we built it
+i already explain it above but here's the summary : we built it using sklearn, flask, opencv, and reading a bunch of remote plethysmographic article, then creating NLP model, after that integrating all of them(THE MOST HARDEST PART AAARGH)
+
+## Challenges we ran into
+- integrating all of my app features is so hard
+- 
+## Accomplishments that we're proud of
+- can integrate my app
+- can do a bpm measure with webcam
+- can build a great but light model (thanks to naive bayes sklearn)
+- can replicate polygraph
+
+## What we learned
+creating a project only for 24 hours is extremely hard T_T
+
+## What's next for REAL TRUTH OR DARE
+- integrate it to all videocall platforms
+- host it, so everybody can use it!!!
+
 ## End sentences
 **Now, while playing Truth or Dare, your friend can't lie anymore. (evil laugh)** 
 
