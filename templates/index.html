@@ -29,6 +29,10 @@
         #titlee{
             color: white;
         }
+        .instruction{
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -45,11 +49,16 @@
                 $("#messages").append('<li>' + msg + '</li>');
             });
 
+            $("#clear").on('click', function(){
+                $("#messages").empty();
+            });
         });
     </script>
 
     <div class="w3-sidebar w3-black w3-bar-block" style="width:40%">
         <ul id="messages">
+            <li class="instruction">If you see "Anomaly : calculating player x" please tell player x to read this text to determine their average bpm & wpm</li>
+            <li class="instruction">The quick fox jumps over the lazy dog</li>
         </ul>
         <button id="clear">clear</button>
     </div>
