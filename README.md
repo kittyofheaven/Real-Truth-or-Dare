@@ -38,4 +38,6 @@ goodnews is, this app can be intregated with zoom, with little help from obs, bu
 - _ps : you can integrate this app to zoom using obs virtual cam & obs audio_
 
 ## End sentences
-now, while playing Truth or Dare, your friend can't lie anymore, _Big thankyou for synthacks to host this hackathon, and btw this project is for synthacks II and the theme is ENTERTAIMENT_, regards [kittyofheaven aka kuroneko](https://github.com/kittyofheaven)
+**Now, while playing Truth or Dare, your friend can't lie anymore. (evil laugh)** 
+
+_Big thankyou for synthacks to host this hackathon, and btw this project is for synthacks II and the theme is ENTERTAIMENT_, regards [kittyofheaven aka kuroneko](https://github.com/kittyofheaven)
