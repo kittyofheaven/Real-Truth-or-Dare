@@ -38,6 +38,13 @@ goodnews is, this app can be intregated with zoom, with little help from obs, bu
 - _ps : you can integrate this app to zoom using obs virtual cam & obs audio_
 
 ## How we built it
+- First I build the voice recognition program bcs its the easiest part of this project, then wrap it with flask, html and socket io. 
+- Second, I collect sentiment data from twitter and bring it to my jupyter notebook. 
+- Third, I build a sentiment model with sklearn & tensorflow, but the tensorflow model appear to be so heavy and take so much resource so i dump it, and use the sklearn one. 
+- Fourth I integrate the sentiment model to voice recognition program that I build previously.
+- Fifth (the hardest), I build and integrate opencv using pretrained face model to locate face, then extract green channel raw data, using vector calculation with numpy and opencv.
+- Sixth, I integrate all of it, importing all of it to main.py and started building route, etc
+
 i already explain it above but here's the summary : we built it using sklearn, flask, opencv, and reading a bunch of remote plethysmographic article, then creating NLP model, after that integrating all of them(THE MOST HARDEST PART AAARGH)
 
 ## Challenges we ran into
