@@ -67,3 +67,6 @@ creating a project only for 24 hours is extremely hard T_T
 **Now, while playing Truth or Dare, your friend can't lie anymore. (evil laugh)** 
 
 _Big thankyou for synthacks to host this hackathon, and btw this project is for synthacks II and the theme is ENTERTAIMENT_, regards [kittyofheaven aka kuroneko](https://github.com/kittyofheaven)
+
+## Achievements
+Winning third place at Synthacks II 
